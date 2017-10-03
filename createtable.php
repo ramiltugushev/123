@@ -1,3 +1,4 @@
+<?php
 // PHP Data Objects(PDO) Sample Code:
 try {
     $conn = new PDO("sqlsrv:server = tcp:rom97.database.windows.net,1433; Database = Rom", "ramiltugushev", "{your_password_here}");
@@ -19,3 +20,4 @@ catch (PDOException $e) {
 $connectionInfo = array("UID" => "ramiltugushev@rom97", "pwd" => "{your_password_here}", "Database" => "Rom", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:rom97.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+?>
